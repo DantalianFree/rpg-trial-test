@@ -1,4 +1,4 @@
-#COMPILER AND FLAGS
+lear#COMPILER AND FLAGS
 CXX = g++
 CXXFLAGS = -I src/header -I src/header/Character -I src/header/Classes -I src/header/Spells
 
