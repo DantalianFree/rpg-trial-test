@@ -1,12 +1,15 @@
 #pragma once
+#include "Character.h"
 #include <iostream>
 #include <string>
 
-class characterCreation {
-private:
-    
-
+class Create {
 public:
-
+    static Character characterCreation( int cType ) {
+        switch( cType ) {
+            case 1:
+                
+        }
+    }
 
 }
