@@ -1,9 +1,29 @@
 #include <iostream>
 #include "main.h"
 
-int main() {
+Character* createCharacter() {
+    int choice;
 
-    Character* player;
+    while(true) {
+        std::cout << "Choose your class:\n"
+                  << "1. Warrior\n"
+                  << "2. Priest\n"
+                  << "3. Wizard\n"
+                  << "4. Rouge\n"
+                  << "Enter your choice ( 1 - 4): ";
+        std::cin >> choice;
+
+        if( choice >= 1 && choice <= 4) {
+            return Create::characterCreation(choice);
+        } else {
+            std::cout << "Invalid choice! Please enter a number between 1 and 4 only.";
+        }
+    }
+}
+
+
+int main() {
+    Character* player = createCharacter();
     player->displayCharacter();
 
     return 0;
