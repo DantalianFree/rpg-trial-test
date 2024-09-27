@@ -10,6 +10,8 @@ public:
         switch( cType ) {
             case 1:
                 return new Warrior();
+            default:
+                return nullptr;
         }
     }
 
