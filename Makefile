@@ -6,9 +6,10 @@ CXXFLAGS = -I src/header -I src/header/Character -I src/header/Classes -I src/he
 SRC_DIR = src/source
 CHARACTER_DIR = $(SRC_DIR)/Character
 CLASSES_DIR = $(SRC_DIR)/Classes
+SPELLS_DIR = $(SRC_DIR)/Spells
 
 #SOURCE FILES
-SOURCES = src/main.cpp $(wildcard $(SRC_DIR)/*.cpp) $(wildcard $(CHARACTER_DIR)/*.cpp) $(wildcard $(CLASSES_DIR)/*.cpp)
+SOURCES = src/main.cpp $(wildcard $(SRC_DIR)/*.cpp) $(wildcard $(CHARACTER_DIR)/*.cpp) $(wildcard $(CLASSES_DIR)/*.cpp) $(wildcard $(SPELLS_DIR)/*.cpp)
 
 #OUTPUT EXE
 OUTPUT = main
