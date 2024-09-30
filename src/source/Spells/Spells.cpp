@@ -33,5 +33,10 @@ void Spells::removeSpell( std::string spellName ) {
 }
 
 void Spells::displaySpellBook() const {
-    
+    std::cout << "Spells:\n";
+    for( size_t i = 0; i < spellBook.size(); i++ ){
+        std::cout << ( i + 1 ) << ". ";
+        spellBook[i].displaySpell();
+        std::cout << "===========================" << std::endl;
+    }
 }
