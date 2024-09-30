@@ -29,6 +29,10 @@ private:
     std::vector<Spell> spellBook;
 
 public:
-    void addSpell( const Spell* spellName );
-    void removeSpell( const Spell* spellName );
+    void addSpell( const Spell spellName );
+    void removeSpell( std::string spellName );
+
+    void castSpell( const Spell* spellName );   
+
+    void displaySpellBook() const;
 };
