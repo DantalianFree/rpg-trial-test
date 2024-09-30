@@ -1,5 +1,11 @@
 #include <iostream>
 #include "main.h"
+#include "conio.h"
+#include "stdlib.h"
+
+Spell fireball("Fireball", 10, 10);
+Spell lightningBolt("Lightning Bolt", 20, 20);
+Spells spellBook;
 
 Character* createCharacter() {
     int choice;
@@ -26,7 +32,11 @@ int main() {
     Character* player = createCharacter();
     player->displayCharacter();
 
-    
+    system("cls");
+
+    spellBook.addSpell(fireball);
+    spellBook.addSpell(lightningBolt);
+    spellBook.displaySpellBook();
 
     return 0;
 }
