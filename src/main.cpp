@@ -26,7 +26,6 @@ Character* createCharacter() {
 
 int main() {
     Character* player = createCharacter();
-    player->displayCharacter();
 
     return 0;
 }
