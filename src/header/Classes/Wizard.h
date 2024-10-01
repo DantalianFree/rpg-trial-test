@@ -10,8 +10,4 @@ private:
 public:
     //Constructor for Wizard
     Wizard();
-
-
-
-
 };
