@@ -1,7 +1,8 @@
 #include "Spells.h"
 #include <iostream>
 
-Spell::Spell( std::string spellName, int damage, int manaCost ) : spellName( spellName ), damage( damage ), manaCost( manaCost) {};
+Spell::Spell( std::string spellName, int damage, int manaCost, std::string spellDescription ) 
+    : spellName( spellName ), damage( damage ), manaCost( manaCost), spellDescription( spellDescription ) {};
 Spell::~Spell() {};
 
 std::string Spell::getSpellName() const { return spellName; }
