@@ -16,7 +16,8 @@ void Spell::setManaCost( int newManaCost ) { manaCost = newManaCost; }
 void Spell::displaySpell() const {
     std::cout << "Spell: " << spellName << "\n"
               << "Damage: " << damage << "\n"
-              << "Mana Cost: " << manaCost << std::endl;
+              << "Mana Cost: " << manaCost << "\n"
+              << "Description: " << spellDescription << std::endl;
 }
 
 
