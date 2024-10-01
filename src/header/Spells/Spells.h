@@ -7,9 +7,10 @@ class Spell {
 private:
     std::string spellName;
     int damage, manaCost;
+    std::string spellDescription;
 
 public:
-    Spell( std::string spellName, int damage, int manaCost );
+    Spell( std::string spellName, int damage, int manaCost, std::string spellDescription);
     ~Spell();
 
     std::string getSpellName() const;
