@@ -42,3 +42,4 @@ void Spells::displaySpellBook() const {
         std::cout << "===========================" << std::endl;
     }
 }
+
