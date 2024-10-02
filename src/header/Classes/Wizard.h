@@ -10,4 +10,6 @@ private:
 public:
     //Constructor for Wizard
     Wizard();
+
+    void castSpell ( const Spell* spellName );
 };
