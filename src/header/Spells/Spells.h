@@ -33,7 +33,5 @@ public:
     void addSpell( const Spell spellName );
     void removeSpell( std::string spellName );
 
-    void castSpell( const Spell* spellName );   
-
     void displaySpellBook() const;
 };
