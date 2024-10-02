@@ -23,10 +23,8 @@ Character* createCharacter() {
     }
 }
 
-
 int main() {
     Character* player = createCharacter();
-    
 
     return 0;
 }
