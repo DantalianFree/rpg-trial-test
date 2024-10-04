@@ -25,6 +25,10 @@ Character* createCharacter() {
 
 int main() {
     Character* player = createCharacter();
+    Enemy Goblin("Goblin", 3, 2, 5, 5);
+
+    player->displayCharacter();
+    Goblin.displayEnemy();
 
     return 0;
 }
