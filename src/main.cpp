@@ -23,12 +23,15 @@ Character* createCharacter() {
     }
 }
 
+Combat combat;
+
 int main() {
     Character* player = createCharacter();
-    Enemy Goblin("Goblin", 3, 2, 5, 5);
 
     player->displayCharacter();
     Goblin.displayEnemy();
+
+    combat.startCombat(player, Direwolf);
 
     return 0;
 }
