@@ -4,7 +4,7 @@
 Enemy Direwolf(
     "Direwolf", //Enemy Type
     15,           //Damage
-    5,           //Defense
+    10,           //Defense
     20,          //Health
     20           //MaxHealth
 );
