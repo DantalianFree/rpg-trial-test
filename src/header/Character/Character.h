@@ -8,6 +8,7 @@ private:
     std::string classType;
     std::string playerName;
     int health, maxHealth, damage, defense;
+    Spells spellBook;
 
 public:
     //Constructor/Destructor
@@ -34,6 +35,7 @@ public:
     void takeDamage( int damage );
     int attack();
     void heal( int amount );
+    void castSpell( Spell* spellName );
 
     //Display
     void displayCharacter() const;
