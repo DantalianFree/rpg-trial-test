@@ -6,7 +6,7 @@
 
 class Combat {
 public:
+    bool isPlayerTurn = true; 
     void startCombat( Character* player, Enemy& enemy);
-    void combatStatus() const;
 
 };
