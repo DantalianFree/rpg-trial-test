@@ -27,10 +27,6 @@ Combat combat;
 
 int main() {
     Character* player = createCharacter();
-
-    player->displayCharacter();
-    Goblin.displayEnemy();
-
     combat.startCombat(player, Direwolf);
 
     return 0;
