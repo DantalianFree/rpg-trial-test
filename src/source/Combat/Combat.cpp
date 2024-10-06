@@ -26,7 +26,7 @@ void Combat::startCombat( Character* player, Enemy& enemy ) {
                 case 1:
                     int playerDamage;
                     playerDamage = player->getDamage();
-                    std::cout << "You attacked " << enemy.getEnemyType() << " for " << player->getDamage() << std::endl;
+                    std::cout << "You attacked " << enemy.getEnemyType() << " for " << player->getDamage() << " damage!" << std::endl;
                     enemy.takeDamage( playerDamage );
                     if( enemy.getHealth() <= 0 ) {
                         std::cout << enemy.getEnemyType() << " has been slain!" << std::endl;
@@ -47,11 +47,17 @@ void Combat::startCombat( Character* player, Enemy& enemy ) {
         } else {
             int enemyDamage;
             enemyDamage = enemy.getDamage();
-            std::cout << enemy.getEnemyType() << " attacks " << player->getName() << " for " << enemy.getDamage();
+            std::cout << enemy.getEnemyType() << " attacks " << player->getName() << " for " << enemy.getDamage() << " damage!\n";
             player->takeDamage( enemyDamage );
-            player->displayCharacter();
-            enemy.displayEnemy();
-            isPlayerTurn = true;
+            
+            if (player->getHealth() <= 0) {
+            std::cout << player->getName() << " has been defeated!\n";
+            playerIsAlive = false;
+            } else {
+                player->displayCharacter();
+                enemy.displayEnemy();
+                isPlayerTurn = true;
+            }
         }
     }
 }
