@@ -43,3 +43,6 @@ void Spells::displaySpellBook() const {
     }
 }
 
+bool Spells::isEmpty() {
+    return spellBook.empty();
+}
