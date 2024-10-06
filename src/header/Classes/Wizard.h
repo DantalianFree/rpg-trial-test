@@ -4,11 +4,10 @@
 #include <iostream>
 
 class Wizard : public Character {
-private:
-    int mana, maxMana;
-
 public:
     //Constructor for Wizard
     Wizard();
+
+    
 
 };
