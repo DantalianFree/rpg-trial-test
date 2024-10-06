@@ -25,8 +25,10 @@ public:
 
     void displayEnemy() const;
 
+    void takeDamage( int damage );
     int attack( int damage );
     void heal( int amount );
 
+    bool isAlive();
 
 };
