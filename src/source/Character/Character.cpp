@@ -41,6 +41,10 @@ void Character::heal( int amount ) {
     }
 }
 
+void Character::castSpell( Spell* spellName ) {
+    
+}
+
 //Display
 void Character::displayCharacter() const {
     std::cout << "Status:\n"
