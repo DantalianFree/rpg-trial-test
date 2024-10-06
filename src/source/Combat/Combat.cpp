@@ -17,7 +17,8 @@ void Combat::startCombat( Character* player, Enemy& enemy ) {
             int choice;
             std::cout << "Its your turn to attack!\n" 
                       << "1. Attack\n"
-                      << "2. Heal\n" 
+                      << "2. Cast Spell"
+                      << "3. Heal\n" 
                       << "Choose an Action: ";
             std::cin >> choice;
 
@@ -39,7 +40,11 @@ void Combat::startCombat( Character* player, Enemy& enemy ) {
                         break;
                     }
                 case 2:
-                    std::cout << "You healed yourself! (WIP)"; //Will be implemented after setting the combat
+                    std::srand(time(0));
+                    int amount = rand() % 9 + 1;
+
+                    std::cout << "You healed " << amount << " health points!" << std::endl;
+                    player->heal(amount);
                     isPlayerTurn = false;
                     break;
                 }
