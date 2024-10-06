@@ -36,3 +36,18 @@ void Enemy::heal( int amount ) {
         health = maxHealth;
     }
 }
+
+bool Enemy::isAlive() {
+    if( health > 0 ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+void Enemy::takeDamage( int damage ) {
+    health -= damage;
+    if( health < 0 ) {
+        health = 0;
+    }
+}
