@@ -3,10 +3,10 @@
 
 Enemy Direwolf(
     "Direwolf", //Enemy Type
-    8,           //Damage
+    15,           //Damage
     5,           //Defense
-    10,          //Health
-    10           //MaxHealth
+    20,          //Health
+    20           //MaxHealth
 );
 
 Enemy FeralDog(
