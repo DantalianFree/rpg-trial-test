@@ -50,3 +50,11 @@ void Character::displayCharacter() const {
               << "Damage: " << damage << "\n"
               << "Defemse: " << defense << std::endl;
 }
+
+bool Character::isAlive() {
+    if( health > 0 ) {
+        return true;
+    } else {
+        return false;
+    }
+}
