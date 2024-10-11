@@ -35,7 +35,6 @@ public:
     void takeDamage( int damage );
     int attack();
     void heal( int amount );
-    void castSpell( Spell* spellName );
 
     //Display
     void displayCharacter() const;
