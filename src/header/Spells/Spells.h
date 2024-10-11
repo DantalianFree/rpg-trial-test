@@ -34,6 +34,8 @@ public:
     void removeSpell( std::string spellName );
     void displaySpellBook() const;
 
+    void castspell( Spell* spellName );
+
     bool isEmpty();
 
 };
