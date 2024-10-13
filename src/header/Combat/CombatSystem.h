@@ -3,6 +3,7 @@
 #include <string>
 #include "Character.h"
 #include "Enemy.h"
+#include "Spells.h"
 
 class Combat {
 public:
