@@ -44,7 +44,7 @@ void Character::heal( int amount ) {
     }
 }
 
-void Character::castSpell( Spell* spellName ) {
+void Character::castSpell( Spell& spellName ) {
     if ( spellBook != nullptr ) {
         spellBook->castspell( spellName );
     } else {
