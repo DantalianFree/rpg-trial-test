@@ -21,6 +21,9 @@ void Character::setHealth( int newHealth ) { health = newHealth; }
 void Character::setMaxHealth( int newMaxHealth ) { maxHealth = newMaxHealth; }
 void Character::setDamage( int newDamage ) { damage = newDamage; }
 void Character::setDefense( int newDefense ) { defense = newDefense;} 
+void Character::setSpellObject( Spells* spells ) {
+    spellBook = spells;
+}
 
 //Actions 
 void Character::takeDamage( int damage ) {
@@ -38,6 +41,14 @@ void Character::heal( int amount ) {
     health += amount;
     if( health > maxHealth ) {
         health = maxHealth;
+    }
+}
+
+void Character::castSpell( Spell* spellName ) {
+    if ( spellBook != nullptr ) {
+        spellBook->castspell( spellName );
+    } else {
+        std::cout << "No spells assigned!" << std::endl;
     }
 }
 
