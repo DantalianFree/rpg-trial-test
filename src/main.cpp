@@ -28,6 +28,6 @@ Combat combat;
 int main() {
     Character* player = createCharacter();
     combat.startCombat(player, Direwolf);
-
+    player->castSpell(FireBolt);
     return 0;
 }
