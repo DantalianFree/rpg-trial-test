@@ -40,6 +40,8 @@ void Combat::startCombat( Character* player, Enemy& enemy ) {
                         break;
                     }
                 case 2:
+                    
+                case 3:
                     std::srand(time(0));
                     int amount = rand() % 9 + 1;
 
