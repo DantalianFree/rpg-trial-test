@@ -50,7 +50,8 @@ bool Spells::isEmpty() {
 void Spells::castspell( Spell* spellName ) {
     for( size_t i = 0; i < spellBook.size(); i++ ) {
         if( spellName->getSpellName() == spellBook[i].getSpellName() ) {
-            
+            std::cout << "You cast " << spellBook[i].getSpellName() 
+                      << " And did " << spellBook[i].getDamage() << " to the enemy" << std::endl;
         }
     }
 }
