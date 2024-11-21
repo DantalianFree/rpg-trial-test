@@ -40,8 +40,17 @@ void Combat::startCombat( Character* player, Enemy& enemy ) {
                         break;
                     }
                 case 2:
-                    std::cout << "cast";
-                    break;
+                    std::string spellName;
+                    std::cout << "Choose a spell to cast: ";
+                    std::cin >> spellName;
+
+                    Spells* spellBook = player->getSpellBook();
+
+                    for(spellBook != nullptr) {
+                        Spell* chosenSpell = nullptr;
+
+                        for(size_t i = 0; i < spellBook.getSpellBook().size(); i++)
+                    }
                 case 3:
                     std::srand(time(0));
                     int amount = rand() % 9 + 1;

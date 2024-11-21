@@ -22,6 +22,7 @@ public:
     int getMaxHealth() const;
     int getDamage() const;
     int getDefense() const;
+    Spells* getSpellBook() const { return spellBook; };
 
     //SETTERS
     void setClassType( std::string newClassType );
@@ -36,7 +37,6 @@ public:
     void takeDamage( int damage );
     int attack();
     void heal( int amount );
-    void castSpell( Spell& spellName );
 
     //Display
     void displayCharacter() const;

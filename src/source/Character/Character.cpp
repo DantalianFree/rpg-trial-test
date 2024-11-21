@@ -13,6 +13,7 @@ int Character::getHealth() const { return health; }
 int Character::getMaxHealth() const { return maxHealth; }
 int Character::getDamage() const { return damage; }
 int Character::getDefense() const { return defense; }
+Spells* Character::getSpellBook() const { return spellBook; }
 
 //SETTERS
 void Character::setClassType( std::string newClassType ) { classType = newClassType; }
@@ -41,14 +42,6 @@ void Character::heal( int amount ) {
     health += amount;
     if( health > maxHealth ) {
         health = maxHealth;
-    }
-}
-
-void Character::castSpell( Spell& spellName ) {
-    if ( spellBook != nullptr ) {
-        spellBook->castspell( spellName );
-    } else {
-        std::cout << "No spells assigned!" << std::endl;
     }
 }
 
